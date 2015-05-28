@@ -1,9 +1,5 @@
 # README #
-<<<<<<< HEAD
 # AngularJS Invoice #
-=======
-# Angularjs_Invoice #
->>>>>>> d0dbc9948e01495320efb7d396e920b8528750eb
 
 [Live Demo](http://invoice.thirdwishcreative.com)
 
@@ -25,8 +21,6 @@ A directive like so would be great:
 
 
 ```
-#!javascript
-
 invoicer.directive('removeOnClick', function() {
     return {
         link: function(scope, elt, attrs) {
@@ -36,14 +30,11 @@ invoicer.directive('removeOnClick', function() {
         }
     }
 });
-
 ```
 
 Then in the HTML 
 
 ```
-#!html
-
 <tr remove-on-click ng-repeat="item in invoice.line_items" ng-hide="(item.price == 0)">
     <td>
         <p>
@@ -57,11 +48,4 @@ Then in the HTML
 
 BUT one would also have to recalculate the total at the same time, or else the line item will go away but the total stay the same.
 
-
-###########################
-
-<<<<<<< HEAD
 Of course it would be cool to have a backend on this too...
-=======
-Of course it would be cool to have a backend on this too...
->>>>>>> d0dbc9948e01495320efb7d396e920b8528750eb
