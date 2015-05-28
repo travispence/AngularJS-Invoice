@@ -44,6 +44,7 @@ Then in the HTML
      <td><p editable-text="invoice.line_items[$index].milestone" e-style="width: 87px">{{item.milestone}}</p></td>
      <td><p editable-text="invoice.line_items[$index].price" e-style="width: 87px">{{item.price | number}}</p></td>
 </tr>
+<button class="remove-btn" ng-click="remove()">X</button>
 ```
 
 BUT one would also have to recalculate the total at the same time, or else the line item will go away but the total stay the same.
